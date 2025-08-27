@@ -1,0 +1,4 @@
+dapr-agents>=0.8.1
+dapr-agents[observability]>=0.8.1
+arize-phoenix>=11.22.0,<12.0.0
+arize-phoenix-otel>=0.12.0,<0.13.0

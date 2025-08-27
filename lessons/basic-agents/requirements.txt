@@ -1,0 +1,4 @@
+dapr-agents>=0.8.1
+sentence-transformers
+chromadb
+posthog<6.0.0

@@ -1,0 +1,111 @@
+{
+    "instances": {
+        "f72112b7edaa4b0f9039a16ae987f443": {
+            "input": "What is current stock value for Microsoft",
+            "output": "The current stock price of Microsoft (MSFT) is $176.59.",
+            "start_time": "2025-08-29T13:36:47.464952",
+            "end_time": "2025-08-29T03:36:53.463903+00:00",
+            "messages": [
+                {
+                    "content": "What is current stock value for Microsoft",
+                    "role": "user",
+                    "id": "53eb5d98-9135-43a7-97b7-c0f77987f69d",
+                    "timestamp": "2025-08-29T13:36:47.676038"
+                },
+                {
+                    "content": null,
+                    "role": "assistant",
+                    "name": "Stockie",
+                    "tool_calls": [
+                        {
+                            "id": "call_vKVEQP654bC5ATZPppaoLe9W",
+                            "type": "function",
+                            "function": {
+                                "name": "LocalGetStockPrice",
+                                "arguments": "{\"symbol\":\"MSFT\"}"
+                            }
+                        }
+                    ],
+                    "id": "a865bb0f-72af-4649-81b5-91df4e879926",
+                    "timestamp": "2025-08-29T13:36:50.160777"
+                },
+                {
+                    "content": "The current price of MSFT is $176.59",
+                    "role": "tool",
+                    "name": "LocalGetStockPrice",
+                    "tool_call_id": "call_vKVEQP654bC5ATZPppaoLe9W",
+                    "id": "653ae9dc-0580-429d-80ec-b0ade1f44222",
+                    "timestamp": "2025-08-29T13:36:51.321378"
+                },
+                {
+                    "content": "The current stock price of Microsoft (MSFT) is $176.59.",
+                    "role": "assistant",
+                    "name": "Stockie",
+                    "id": "2d0005a9-bf70-43ff-aab3-da3223535b7c",
+                    "timestamp": "2025-08-29T13:36:53.322746"
+                }
+            ],
+            "last_message": {
+                "content": "The current stock price of Microsoft (MSFT) is $176.59.",
+                "role": "assistant",
+                "name": "Stockie",
+                "id": "2d0005a9-bf70-43ff-aab3-da3223535b7c",
+                "timestamp": "2025-08-29T13:36:53.322746"
+            },
+            "tool_history": [
+                {
+                    "id": "912f56ce-c34b-42b0-81ea-afd46a5a0f64",
+                    "timestamp": "2025-08-29T13:36:51.321462",
+                    "tool_call_id": "call_vKVEQP654bC5ATZPppaoLe9W",
+                    "tool_name": "LocalGetStockPrice",
+                    "tool_args": {
+                        "symbol": "MSFT"
+                    },
+                    "execution_result": "The current price of MSFT is $176.59"
+                }
+            ],
+            "source": null,
+            "source_workflow_instance_id": null
+        }
+    },
+    "chat_history": [
+        {
+            "content": "What is current stock value for Microsoft",
+            "role": "user",
+            "id": "53eb5d98-9135-43a7-97b7-c0f77987f69d",
+            "timestamp": "2025-08-29T13:36:47.676038"
+        },
+        {
+            "content": null,
+            "role": "assistant",
+            "name": "Stockie",
+            "tool_calls": [
+                {
+                    "id": "call_vKVEQP654bC5ATZPppaoLe9W",
+                    "type": "function",
+                    "function": {
+                        "name": "LocalGetStockPrice",
+                        "arguments": "{\"symbol\":\"MSFT\"}"
+                    }
+                }
+            ],
+            "id": "a865bb0f-72af-4649-81b5-91df4e879926",
+            "timestamp": "2025-08-29T13:36:50.160777"
+        },
+        {
+            "content": "The current price of MSFT is $176.59",
+            "role": "tool",
+            "name": "LocalGetStockPrice",
+            "tool_call_id": "call_vKVEQP654bC5ATZPppaoLe9W",
+            "id": "653ae9dc-0580-429d-80ec-b0ade1f44222",
+            "timestamp": "2025-08-29T13:36:51.321378"
+        },
+        {
+            "content": "The current stock price of Microsoft (MSFT) is $176.59.",
+            "role": "assistant",
+            "name": "Stockie",
+            "id": "2d0005a9-bf70-43ff-aab3-da3223535b7c",
+            "timestamp": "2025-08-29T13:36:53.322746"
+        }
+    ]
+}

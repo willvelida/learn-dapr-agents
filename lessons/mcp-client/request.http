@@ -1,0 +1,4 @@
+POST http://localhost:8001/start-workflow
+Content-Type: application/json
+
+{"task": "What is current stock value for Microsoft"}

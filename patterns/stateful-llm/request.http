@@ -1,0 +1,6 @@
+POST http://localhost:8002/start-workflow
+Content-Type: application/json
+
+{
+  "task": "I love sci-fi and fantasy books. Can you recommend some good books for me?"
+}

@@ -1,0 +1,153 @@
+{
+    "instances": {
+        "a44312b7af734d5b998b8657149ff395": {
+            "input": "I love sci-fi and fantasy books. Can you recommend some good books for me?",
+            "output": "Here are some great book recommendations for your favorite genres:\n\n**Sci-Fi:**\n1. *Dune* by Frank Herbert\n2. *Neuromancer* by William Gibson\n\n**Fantasy:**\n1. *The Name of the Wind* by Patrick Rothfuss\n2. *Mistborn* by Brandon Sanderson\n\nI hope you enjoy these adventures in new worlds! If you'd like more recommendations or have other genres in mind, just let me know.",
+            "start_time": "2025-08-29T14:22:52.255945",
+            "end_time": "2025-08-29T04:22:58.844390+00:00",
+            "messages": [
+                {
+                    "content": "I love sci-fi and fantasy books. Can you recommend some good books for me?",
+                    "role": "user",
+                    "id": "f22d773b-a4f5-4d37-bdd6-1085f6c9f80a",
+                    "timestamp": "2025-08-29T14:22:52.533288"
+                },
+                {
+                    "content": null,
+                    "role": "assistant",
+                    "name": "BookBuddy",
+                    "tool_calls": [
+                        {
+                            "id": "call_gDI0pAHZWsGl4vdSd8OKItn0",
+                            "type": "function",
+                            "function": {
+                                "name": "RecommendBooks",
+                                "arguments": "{\"genre\": \"sci-fi\"}"
+                            }
+                        },
+                        {
+                            "id": "call_l0zH45CURnbCSy6ScqV5XkGn",
+                            "type": "function",
+                            "function": {
+                                "name": "RecommendBooks",
+                                "arguments": "{\"genre\": \"fantasy\"}"
+                            }
+                        }
+                    ],
+                    "id": "c5a48223-1af3-4694-a009-8c8e10894629",
+                    "timestamp": "2025-08-29T14:22:55.564665"
+                },
+                {
+                    "content": "[BookRecommendation(title='Dune', author='Frank Herbert'), BookRecommendation(title='Neuromancer', author='William Gibson')]",
+                    "role": "tool",
+                    "name": "RecommendBooks",
+                    "tool_call_id": "call_gDI0pAHZWsGl4vdSd8OKItn0",
+                    "id": "3460a405-e8f3-49f2-aaa9-25a03e2a5a19",
+                    "timestamp": "2025-08-29T14:22:55.922357"
+                },
+                {
+                    "content": "[BookRecommendation(title='The Name of the Wind', author='Patrick Rothfuss'), BookRecommendation(title='Mistborn', author='Brandon Sanderson')]",
+                    "role": "tool",
+                    "name": "RecommendBooks",
+                    "tool_call_id": "call_l0zH45CURnbCSy6ScqV5XkGn",
+                    "id": "bddfaafa-c251-4881-8766-08b7038240a5",
+                    "timestamp": "2025-08-29T14:22:56.038118"
+                },
+                {
+                    "content": "Here are some great book recommendations for your favorite genres:\n\n**Sci-Fi:**\n1. *Dune* by Frank Herbert\n2. *Neuromancer* by William Gibson\n\n**Fantasy:**\n1. *The Name of the Wind* by Patrick Rothfuss\n2. *Mistborn* by Brandon Sanderson\n\nI hope you enjoy these adventures in new worlds! If you'd like more recommendations or have other genres in mind, just let me know.",
+                    "role": "assistant",
+                    "name": "BookBuddy",
+                    "id": "b08a802b-7f2a-4e29-8e29-69d744cae944",
+                    "timestamp": "2025-08-29T14:22:58.654913"
+                }
+            ],
+            "last_message": {
+                "content": "Here are some great book recommendations for your favorite genres:\n\n**Sci-Fi:**\n1. *Dune* by Frank Herbert\n2. *Neuromancer* by William Gibson\n\n**Fantasy:**\n1. *The Name of the Wind* by Patrick Rothfuss\n2. *Mistborn* by Brandon Sanderson\n\nI hope you enjoy these adventures in new worlds! If you'd like more recommendations or have other genres in mind, just let me know.",
+                "role": "assistant",
+                "name": "BookBuddy",
+                "id": "b08a802b-7f2a-4e29-8e29-69d744cae944",
+                "timestamp": "2025-08-29T14:22:58.654913"
+            },
+            "tool_history": [
+                {
+                    "id": "c80a60cc-2966-44c0-be2f-3aa685a45506",
+                    "timestamp": "2025-08-29T14:22:55.922775",
+                    "tool_call_id": "call_gDI0pAHZWsGl4vdSd8OKItn0",
+                    "tool_name": "RecommendBooks",
+                    "tool_args": {
+                        "genre": "sci-fi"
+                    },
+                    "execution_result": "[BookRecommendation(title='Dune', author='Frank Herbert'), BookRecommendation(title='Neuromancer', author='William Gibson')]"
+                },
+                {
+                    "id": "629b8b0f-e7bb-4874-9eaf-e341bd720b5a",
+                    "timestamp": "2025-08-29T14:22:56.038218",
+                    "tool_call_id": "call_l0zH45CURnbCSy6ScqV5XkGn",
+                    "tool_name": "RecommendBooks",
+                    "tool_args": {
+                        "genre": "fantasy"
+                    },
+                    "execution_result": "[BookRecommendation(title='The Name of the Wind', author='Patrick Rothfuss'), BookRecommendation(title='Mistborn', author='Brandon Sanderson')]"
+                }
+            ],
+            "source": null,
+            "source_workflow_instance_id": null
+        }
+    },
+    "chat_history": [
+        {
+            "content": "I love sci-fi and fantasy books. Can you recommend some good books for me?",
+            "role": "user",
+            "id": "f22d773b-a4f5-4d37-bdd6-1085f6c9f80a",
+            "timestamp": "2025-08-29T14:22:52.533288"
+        },
+        {
+            "content": null,
+            "role": "assistant",
+            "name": "BookBuddy",
+            "tool_calls": [
+                {
+                    "id": "call_gDI0pAHZWsGl4vdSd8OKItn0",
+                    "type": "function",
+                    "function": {
+                        "name": "RecommendBooks",
+                        "arguments": "{\"genre\": \"sci-fi\"}"
+                    }
+                },
+                {
+                    "id": "call_l0zH45CURnbCSy6ScqV5XkGn",
+                    "type": "function",
+                    "function": {
+                        "name": "RecommendBooks",
+                        "arguments": "{\"genre\": \"fantasy\"}"
+                    }
+                }
+            ],
+            "id": "c5a48223-1af3-4694-a009-8c8e10894629",
+            "timestamp": "2025-08-29T14:22:55.564665"
+        },
+        {
+            "content": "[BookRecommendation(title='Dune', author='Frank Herbert'), BookRecommendation(title='Neuromancer', author='William Gibson')]",
+            "role": "tool",
+            "name": "RecommendBooks",
+            "tool_call_id": "call_gDI0pAHZWsGl4vdSd8OKItn0",
+            "id": "3460a405-e8f3-49f2-aaa9-25a03e2a5a19",
+            "timestamp": "2025-08-29T14:22:55.922357"
+        },
+        {
+            "content": "[BookRecommendation(title='The Name of the Wind', author='Patrick Rothfuss'), BookRecommendation(title='Mistborn', author='Brandon Sanderson')]",
+            "role": "tool",
+            "name": "RecommendBooks",
+            "tool_call_id": "call_l0zH45CURnbCSy6ScqV5XkGn",
+            "id": "bddfaafa-c251-4881-8766-08b7038240a5",
+            "timestamp": "2025-08-29T14:22:56.038118"
+        },
+        {
+            "content": "Here are some great book recommendations for your favorite genres:\n\n**Sci-Fi:**\n1. *Dune* by Frank Herbert\n2. *Neuromancer* by William Gibson\n\n**Fantasy:**\n1. *The Name of the Wind* by Patrick Rothfuss\n2. *Mistborn* by Brandon Sanderson\n\nI hope you enjoy these adventures in new worlds! If you'd like more recommendations or have other genres in mind, just let me know.",
+            "role": "assistant",
+            "name": "BookBuddy",
+            "id": "b08a802b-7f2a-4e29-8e29-69d744cae944",
+            "timestamp": "2025-08-29T14:22:58.654913"
+        }
+    ]
+}

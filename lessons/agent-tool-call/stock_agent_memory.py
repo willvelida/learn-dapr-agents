@@ -23,6 +23,14 @@ StockAgent = Agent(
 
 async def main():
     await StockAgent.run("What are the current prices of AAPL, TSLA, and MSFT?")
+    print(StockAgent.chat_history)
+
+    await StockAgent.run("What was the stock price for MSFT again?")
+    print(StockAgent.chat_history)
+
+    StockAgent.reset_memory()
+    print("Chat history after reset:")
+    print(StockAgent.chat_history)
 
 if __name__ == "__main__":
     asyncio.run(main())
